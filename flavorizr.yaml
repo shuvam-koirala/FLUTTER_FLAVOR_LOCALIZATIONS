@@ -1,0 +1,18 @@
+flavors:
+  development:
+    app:
+      name: "Development App"
+
+    android:  
+      applicationId: "com.curiouscoder.dev"
+    ios:
+      bundleId : "com.curiouscoder.dev"
+
+  production:
+    app:
+      name: "Production App"
+
+    android:
+      applicationId: "com.curiouscoder.prod"
+    ios:
+      bundleId: "com.curiouscoder.prod"          
