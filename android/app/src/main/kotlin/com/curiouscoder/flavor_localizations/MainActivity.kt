@@ -1,4 +1,4 @@
-package com.example.flavor_localizations
+package com.curiouscoder.flavor_localizations
 
 import io.flutter.embedding.android.FlutterActivity
 
