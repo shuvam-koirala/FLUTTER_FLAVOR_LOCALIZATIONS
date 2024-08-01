@@ -15,10 +15,26 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 title: F.title,
                 locale: localeState.locale,
-                theme: ThemeData(
+                themeMode: themeState.brightness == Brightness.light
+                    ? ThemeMode.light
+                    : ThemeMode.dark,
+                darkTheme: ThemeData(
+                  appBarTheme: AppBarTheme(color: F.color.secondaryColor),
+                  primaryColor: F.color.secondaryColor,
                   brightness: themeState.brightness,
+                  scaffoldBackgroundColor: F.color.primaryColorLight,
                   colorScheme: ColorScheme.fromSeed(
-                      seedColor: Colors.deepPurple,
+                      seedColor: F.color.secondaryColorLight,
+                      brightness: themeState.brightness),
+                  useMaterial3: true,
+                ),
+                theme: ThemeData(
+                  appBarTheme: AppBarTheme(color: F.color.secondaryColorLight),
+                  primaryColor: F.color.primaryColor,
+                  brightness: themeState.brightness,
+                  scaffoldBackgroundColor: F.color.primaryColor,
+                  colorScheme: ColorScheme.fromSeed(
+                      seedColor: F.color.primaryColorLight,
                       brightness: themeState.brightness),
                   useMaterial3: true,
                 ),
