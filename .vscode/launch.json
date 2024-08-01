@@ -10,6 +10,22 @@
             "type": "dart"
         },
         {
+            "name": "flavor_localizations_prod",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_production.dart",
+            "args": ["--flavor", "production","target","lib/main_production.dart"]
+
+        },
+        {
+            "name": "flavor_localizations_dev",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_development.dart",
+            "args": ["--flavor", "development","target","lib/main_development.dart"]
+
+        },
+        {
             "name": "flavor_localizations (profile mode)",
             "request": "launch",
             "type": "dart",

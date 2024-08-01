@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
                 localizationsDelegates: AppLocalizations.localizationsDelegates,
                 supportedLocales: AppLocalizations.supportedLocales,
                 onGenerateRoute: router.onGenerateRoute,
-                debugShowCheckedModeBanner: false,
+                debugShowCheckedModeBanner: F.appFlavor == Flavor.development,
                 debugShowMaterialGrid: false,
               );
             },

@@ -4,15 +4,21 @@ flavors:
       name: "Development App"
 
     android:  
-      applicationId: "com.curiouscoder.dev"
+      applicationId: "com.curiouscoder.flavor_localizations.dev"
+      icon: "assets/icons/dev_icon.png"
     ios:
-      bundleId : "com.curiouscoder.dev"
+      bundleId : "com.curiouscoder.flavor_localizations.dev"
+      icon: "assets/icons/dev_icon.png"
+
 
   production:
     app:
       name: "Production App"
 
     android:
-      applicationId: "com.curiouscoder.prod"
+      applicationId: "com.curiouscoder.flavor_localizations.prod"
+      icon: "assets/icons/prod_icon.png"
+
     ios:
-      bundleId: "com.curiouscoder.prod"          
+      bundleId: "com.curiouscoder.flavor_localizations.prod"     
+      icon: "assets/icons/prod_icon.png"

@@ -1,8 +1,8 @@
 import 'package:flavor_localizations/barrel.dart';
+import 'package:flavor_localizations/core/utils/helpers/main_initialization_helper.dart';
 import 'package:flavor_localizations/features/todo/data/repositories/todo_repository.dart';
 import 'package:flavor_localizations/features/todo/domain/usecases/todo_usecase.dart';
 import 'package:flavor_localizations/features/todo/presentation/blocs/todo_bloc/todo_bloc.dart';
-import 'package:flavor_localizations/main.dart';
 
 final class MultiBlocHelper {
   getProviders() {
